@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Меню -->
+<ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="catalog.html">Каталог</a></li>
+</ul>
+
+<hr>
+
+<h1>Каталог</h1>
+
+<select id="filter">
+    <option value="all">Все</option>
+    <option value="novel">Роман</option>
+    <option value="fantasy">Фантастика</option>
+    <option value="detective">Детектив</option>
+    <option value="classic">Классика</option>
+</select>
+
+<!-- Книга 1 -->
+<div class="product" data-category="novel">
+
+    <a href="book1.html">
+        <img src="img/book1.jpg" width="200">
+    </a>
+
+    <p>
+        <a href="book1.html">Харуки Мураками — Светлячок и другие рассказы</a>
+    </p>
+
+    <p class="price">500 руб</p>
+
+    <button class="add-to-cart" data-name="Светлячок и другие рассказы" data-price="500">
+        Добавить в корзину
+    </button>
+</div>
+
+<!-- Книга 2 -->
+<div class="product" data-category="novel">
+
+    <a href="book2.html">
+        <img src="img/book2.jpg" width="200">
+    </a>
+
+    <p>
+        <a href="book2.html">Джордж Оруэлл — 1984</a>
+    </p>
+
+    <p class="price">400 руб</p>
+
+    <button class="add-to-cart" data-name="1984" data-price="400">
+        Добавить в корзину
+    </button>
+
+</div>
+
+<!-- Книга 3 -->
+<div class="product" data-category="fantasy">
+
+    <a href="book3.html">
+        <img src="img/book3.jpg" width="200">
+    </a>
+
+    <p>
+        <a href="book3.html">Рэй Брэдбери — 451° по Фаренгейту</a>
+    </p>
+
+    <p class="price">450 руб</p>
+
+    <button class="add-to-cart" data-name="451° по Фаренгейту" data-price="450">
+        Добавить в корзину
+    </button>
+
+</div>
+
+<!-- Книга 4 -->
+<div class="product" data-category="detective">
+
+    <a href="book4.html">
+        <img src="img/book4.jpg">
+    </a>
+
+    <p>
+        <a href="book4.html">Артур Конан Дойл — Шерлок Холмс</a>
+    </p>
+
+    <p class="price">350 руб</p>
+
+    <button class="add-to-cart" data-name="Шерлок Холмс" data-price="350">
+        Добавить в корзину
+    </button>
+
+</div>
+
+
+<!-- Книга 5 -->
+<div class="product" data-category="classic">
+
+    <a href="book5.html">
+        <img src="img/book5.jpg">
+    </a>
+
+    <p>
+        <a href="book5.html">Лев Толстой — Война и мир</a>
+    </p>
+
+    <p class="price">600 руб</p>
+
+    <button class="add-to-cart" data-name="Война и мир" data-price="600">
+        Добавить в корзину
+    </button>
+
+</div>
+
+<hr>
+
+<h2>Корзина</h2>
+
+<div id="cart"></div>
+
+<p id="total">Итого: 0</p>
+
+<button id="clear">Очистить корзину</button>
+<button id="pay">Оплатить</button>
+
+<p>&copy; 2026 Все права защищены</p>
+
+<script src="script.js"></script>
+</body>
+</html>
